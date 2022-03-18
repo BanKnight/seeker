@@ -5,7 +5,7 @@ package("quickjs")
     add_urls("https://github.com/c-smile/quickjspp.git")
     add_versions("2021.03.27", "2902f49b4b1cce901328802248c931622f474aba")
 
-    add_patches("2021.03.27", path.join(os.scriptdir(), "patches", "2021.03.27", "fix.patch"), "96365C476125711BD6B7685F9D79FE99D250801681B5FD99626166C98DBC5863")
+    add_patches("2021.03.27", path.join(os.scriptdir(), "patches", "2021.03.27", "fix.patch"), "12076033DBC9B714DE12307AEFB38D57821BA880C365ABD063EBD998609B5067")
 
     if is_plat("linux", "macosx", "iphoneos", "cross") then
         add_syslinks("pthread", "dl", "m")

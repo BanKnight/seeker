@@ -88,7 +88,7 @@ static JSClassDef js_point_class = {
 
 static JSValue js_get_fillstyle(JSContext *ctx, JSValueConst this_val, int magic)
 {
-
+    return JS_EXCEPTION;
 }
 
 
@@ -113,6 +113,9 @@ static JSValue js_set_fillstyle(JSContext *ctx, JSValueConst this_val, JSValue v
     {
         // 看W3C标准规范，fillStyle可能是CanvasGradient，包括线性渐变和径向渐变，这里先不实现
     }
+
+            return JS_EXCEPTION;
+
 }
 
 static const JSCFunctionListEntry js_proto_funcs[] = {
